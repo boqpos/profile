@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+@font-face {
+    font-family: 'Tippy Toes';
+    src: url("/fonts/PaneuropaBankette.ttf");
+}
+@font-face {
+    font-family: 'Namu';
+    src: url("/fonts/NAMU-Pro.ttf");
+}
+@font-face {
+    font-family: 'Kyiv';
+    src: url("/fonts/KyivTypeSans-VarGX.ttf");
+}
+@font-face {
+    font-family: 'Yanone';
+    src: url("/fonts/Raleway.ttf");
+}
+
+@font-face {font-family: 'Darker Grotesque', sans-serif;}
+@font-face {font-family: 'Quattrocento Sans', sans-serif;}
+@font-face {font-family: 'Poiret One', cursive;}
+.bb {border: 1px solid red;}
+*,*:before,*:after{padding: 0;margin: 0;border: 0;box-sizing: border-box;}
+html,body {height: 100%;background-color: black;}
+.page {display: flex;flex-direction: column;min-height: 100%;}
+.container {max-width: 1180px;margin: 0 auto;padding: 0 15px;}
+.header-container {max-width: 1180px;margin: 0 auto;}
+.contact-container {max-width: 1180px;margin: 0 auto;padding: 0 5%;}
+.main-container {max-width: 1180px;margin: 0 auto;}
+.footer-container {max-width: 1180px;margin: 0 auto;padding: 0 15px;}
+.separator {
+    width: 100%;
+    /*display: flex;*/
+    position: fixed;
+    justify-content: space-between;
+    height: 185px;
+    background: #393e3c;
+}
+.header {z-index: 10;}
+.main {margin-top: 190px;}
+.footer {
+    height: 100%;
+    position: fixed;
+    width: 10%;
+    z-index: 5;
+    right: 0;
+    display: flex;
+    top: 185px;
+}
+.footer-contact {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    list-style: none;
+    bottom: 10%;
+}
+.header-title {display: flex;position: relative;width: 100%;height: 180px;}
+
+.photo {margin: 1% 0 0 0;}
+.photo img {height: 168px;width: 160px;border-radius: 50%;}
+
+.about{
+    font-family: 'Tippy Toes',sans-serif;
+    margin: 0 1% 0 1%;
+    display: flex;
+    align-items: baseline;
+    gap: 5%;
+    font-size: 36px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+/*.about{*/
+/*    font-family: 'Tippy Toes',sans-serif;*/
+/*    margin: 1% 1% 0 1%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    font-size: 36px;*/
+/*    letter-spacing: 0;*/
+/*    line-height: 36px;*/
+/*    text-transform: uppercase;}*/
+.about a{color: white;text-decoration: none;}
+.about-table {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+}
+.name {color: white;letter-spacing: 1px;}
+.country,.phone,.telegram {
+    font-family: 'Darker Grotesque', sans-serif;color: darkgray;letter-spacing: 3px;}
+/*.country {font-size: 21px;}*/
+.telegram {font-size: 18px;}
+.phone {font-size: 21px;}
+
+.header-menu {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    bottom: 7%;
+    right: 0;
+}
+/*}*/
+/*.header-menu {*/
+/*    margin: 1% 0 1% 0;*/
+/*    height: 30px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+.header-menu a {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 21px;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #e3acdc;
+}
+.menu {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    }
+
+.header-contact {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 21px;
+    /*position: absolute;*/
+    padding: 5px;
+    bottom: 1%;
+    width: 100%;
+}
+
+.contact {display: flex;justify-content: space-between;list-style: none;}
+.contact a {color: white;letter-spacing:3px;text-decoration: none;}
+
+.skill {
+    margin: 1% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.title {
+    font-family: 'Darker Grotesque', sans-serif;
+    color: antiquewhite;
+    font-size: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+    background: rgba(150,150,150,0.1);
+    height: 60px;
+    text-transform: uppercase;
+}
+.block {
+        /*font-family: 'Darker Grotesque', sans-serif;*/
+        /*font-size: 26px;*/
+        /*color: white;*/
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+.block-2 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: grid;
+}
+.block-3 {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    position: relative;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+.html-skill,.js-skill,.css-skill {color: white;font-family: 'Yanone',sans-serif;font-weight: 600;font-size:21px;letter-spacing: 5px;}
+.skill-text span {color: gray;font-family: 'Yanone',sans-serif;text-transform: uppercase;font-size: 18px;
+    font-weight: 500;letter-spacing: 0;}
+.skill-text {font-family: 'Yanone',sans-serif;text-transform: uppercase;font-size: 18px;color: gray;
+    font-weight: 600;}
+.university-1,.university-2 {
+    list-style: none;
+    font-family: 'Yanone',sans-serif;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    line-height: 25px;}
+.university-name {font-size: 21px;
+    font-weight: 600;
+letter-spacing: 5px;}
+.university-stage {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: gray;
+    text-transform: uppercase;
+}
+.university-position {
+    font-size: 18px;
+    color: gray;
+}
+.university-date {
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+}
+.soft-list {
+    list-style: none;
+    font-family: 'Yanone',sans-serif;
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 1%;
+    line-height: 25px;}
+.data-list {
+    list-style: none;
+    font-family: 'Yanone',sans-serif;
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 1%;
+    line-height: 25px;}
+.job-title {
+    font-family: 'Yanone',sans-serif;
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+.job-text {
+    font-family: 'Yanone',sans-serif;
+    font-size: 16px;
+    color: gray;
+    line-height: 25px;
+}
+.job-list {margin-top: 3%;font-size: 16px;line-height: 20px;list-style: none;text-transform: uppercase}
+.box {
+    width: 100%;
+    display: flex;
+}
+.footer-contact img{
+    height: 40px;}
+
+.block-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+.work-1 a {color: white;text-decoration: none;text-transform: uppercase;letter-spacing: 5px;font-weight: 600}
+.menu-table {
+    display: flex;
+    flex-direction: column;
+}
+.menu-table > .git {font-size: 16px;margin: 5% 0 0 auto}
+.menu-table > .soft {font-size: 16px;margin: 5% 0 0 auto}
+.footer-contact li {
+    margin-top: 50%;
+}
+
+@media(max-width: 826px) {
+    .photo img {display: none;}
+    .separator {height: 140px;}
+    .header-container {height: 140px;} .header-title {height: 140px;}
+    .about {gap: 0;margin: 0 auto}
+    .about-table {flex-direction: row;justify-content: space-around;width: 100%;}
+    .name {margin: 0 auto;letter-spacing: 3px}
+    .header-menu {bottom: 5%;width: 100%;}
+    .main {margin-top: 150px;}
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 390px) {
+    .main {
+        margin-top: 115px;}
+    .about {font-size: 28px}
+    .about-table {
+        top: 0;
+        margin-top: 8%;}
+    .header-menu a {
+        font-size: 16px;
+    }
+    .header-menu {bottom: 20%}
+    .separator {
+        height: 64px;}
+    .title {font-size: 26px;
+        height: 48px;}
+    .block,.block-3 {font-size: 21px;}
+    .skill {margin: 1% 0 6% 0;}
+    .skill-text {font-size: 14px;}
+    .footer {
+        height: 45px;
+        width: 100%;
+        bottom: 0;
+        top: auto;
+        background: black;
+    }
+    .footer-container {
+        width:100%;
+        padding: 0;
+    }
+    .footer-contact {
+        flex-direction: inherit;bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .footer-contact li {
+         margin-top: 0;
+    }
+    .job-title {font-size: 18px;
+        margin-top: 1%;}
+    .job-text {font-size: 16px;}
+    .data-list {font-size: 16px;line-height: 25px}
+    .soft-list {font-size: 16px;line-height: 25px}
+    .html-skill, .js-skill, .css-skill {
+        letter-spacing: 1px;
+    }
+    .box {flex-direction: column}
+    .university-name,.university-position {font-size: 18px;}
+}
